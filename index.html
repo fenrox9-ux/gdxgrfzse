@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ob-havo</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="app">
+  <header class="top">
+    <div class="brand">☀️ Ob-havo</div>
+    <div class="search">
+      <input id="q" type="search" placeholder="Shahar nomini yozing…" autocomplete="off" aria-label="Shahar qidirish">
+      <ul id="results" class="results" hidden></ul>
+    </div>
+    <button id="theme" class="icon-btn" aria-label="Mavzuni almashtirish">🌙</button>
+  </header>
+
+  <p id="status" class="status" role="status"></p>
+
+  <section class="hero" id="hero">
+    <div>
+      <h1 id="city">—</h1>
+      <p id="date" class="muted"></p>
+      <p id="desc" class="desc"></p>
+    </div>
+    <div class="hero-right">
+      <div id="icon" class="big-icon">⏳</div>
+      <div id="temp" class="temp">--°</div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="card"><span class="muted">Sezilishi</span><strong id="feels">--</strong></div>
+    <div class="card"><span class="muted">Namlik</span><strong id="hum">--</strong></div>
+    <div class="card"><span class="muted">Shamol</span><strong id="wind">--</strong></div>
+    <div class="card"><span class="muted">Yog‘ingarchilik</span><strong id="prec">--</strong></div>
+  </section>
+
+  <section>
+    <h2>7 kunlik prognoz</h2>
+    <div class="days" id="days"></div>
+  </section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
